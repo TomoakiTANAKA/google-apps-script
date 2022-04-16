@@ -5,3 +5,6 @@ services:
       context: "."
       dockerfile: dockerfiles/node/Dockerfile
     container_name: 'gas-app'
+    tty: true
+    volumes:
+      - "./src:/gas-app"
