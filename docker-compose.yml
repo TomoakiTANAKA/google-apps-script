@@ -1,0 +1,7 @@
+version: '3'
+services:
+  gas-app:
+    build:
+      context: "."
+      dockerfile: dockerfiles/node/Dockerfile
+    container_name: 'gas-app'
